@@ -1,0 +1,10 @@
+html, body {width: 100%; height: 100%; background-color: red;}
+
+#container {padding-top: 10px; width: 100%; height: 100%; background-color: antiquewhite;}
+#test {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: 100%; background-color: brown;}
+#test > div {background-color: aliceblue;}
+#test > div:not(:first-child) {margin-top: 10px;}

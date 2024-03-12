@@ -1,0 +1,15 @@
+body {padding-top: 20px; background-color: #27b4df;}
+
+/*중복된 코드 때문에  div에 먼저 줌*/
+div {border: 3px solid #27df30; width: 100px; left:50px; text-align: center;} 
+
+div.static {position: static; border-color: #27df30; }
+/*
+포지션은 디폴트가 스태틱 
+레프트 라이트 등 스태틱은 안먹힘
+*/
+div.relative {position: relative; border-color: rgb(28, 42, 236); }
+div.fixed {position: fixed; border-color: rgb(224, 26, 175); top: 0;left: 0;}
+div.absolute {position: absolute; top:0; border-color: brown; left:auto;right: 0;}
+div.relative2 {box-sizing: border-box; position: relative; width: 200px; height: 200px;}
+div.sticky {position: sticky; position: -webkit-sticky; top: 0;left: 250px;}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block 태그</title>
+    <style>
+        .comp-div-container { background-color: beige; width: 300px;} 
+        .comp-div-container img { width: 800px;}
+        div.comp-div-container > #comp-id-title { color: red;} 
+        #comp-id-title {color: aqua;}  /*같은건데 우선순위 생김 더 자세할 수록 강함*/
+    </style>
+</head>
+<body>
+    <img src="https://image.news1.kr/system/photos/2023/12/5/6362131/high.jpg/dims/resize/1200x/optimize" alt="장원영사진" title="장원영">
+
+    <div class="comp-div-container"> <!--class는 이름 설정 - 위의 스타일에서만 사용-->
+        <div id="comp-id-title" style="color: rgb(21, 255, 0); ">
+            제목
+            <div>반갑습니다</div>
+        </div>
+        
+        <div>
+            <div>
+                <img src="https://image.news1.kr/system/photos/2023/12/5/6362131/high.jpg/dims/resize/1200x/optimize" alt="장원영사진" title="장원영">
+            </div>
+        </div>
+    </div>
+    <div class="comp-div-container">
+        <div>제목</div>
+        <div>
+            <div>
+                <img src="https://image.news1.kr/system/photos/2023/12/5/6362131/high.jpg/dims/resize/1200x/optimize" alt="장원영사진" title="장원영">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

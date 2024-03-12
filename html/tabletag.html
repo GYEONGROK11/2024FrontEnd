@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 태그 </title>
+    <style>
+        /* 태그 ,클래스, 아이디 선택자*/
+        /* 테이블 태그 선택*/
+        table { border : 1px solid #666; border-collapse: collapse;}
+        td { border : 1px solid #666; padding: 1rem;}
+    
+    </style>
+    <script defer>
+
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>번호</td>
+            <td>이름</td>
+            <td>나이</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>홍길동</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>곽경록</td>
+            <td rowspan="2">25</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>깅깅록</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>고경록</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td colspan="2">오경록</td>
+        </tr>
+    </table>
+
+</body>
+</html>

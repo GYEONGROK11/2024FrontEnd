@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ES5에 있는 문제
+        //호이스팅 : 처음 적힌것을 쭉 읽고 -> 함수를 상단으로 끌어올림
+        //변수도 호이스팅 가능함 하지만 초기화된 수까지 는 안해줌
+        sum(10,20);
+
+        function sum(n1,n2){
+            //console.log(n1, '+', n2, ':',n1+n2);
+            console.log(`${n1} + ${n2} =`,n1+n2);
+        }
+
+        console.log('a:',a)
+        var a = 10;
+        console.log('a:',a)
+        
+        console.log('b:',b)
+        let b = 10;
+
+    </script>
+</body>
+</html>

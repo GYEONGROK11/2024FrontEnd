@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자
+        1.태그 선택자
+        2.클래스 선택자
+        3.아이디 선택자
+        */
+    
+        .cls {background-color: bisque; color: red;}  /* !important 임포턴트 우선순위 젤 위로 잘안씀*/
+    </style>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/hello/hello.css">
+    <link rel="stylesheet" href="/visual.css">
+</head>
+<body>
+    <!--
+        css 특징
+        1. 우선순위 싸움  - 우선순위 더 직접적 더 자세한 곳
+        2. 캐스케이딩 유무 - 
+
+        css 작성 위치 3곳
+        1. 인라인 스타일 - 태그에 직접 작성 (style 속성에 입력)
+        2. html파일 head태그에 style태그 안에 작성
+        3. *** 외부css 파일을 만들어서 import하여 사용 ***        ↑ 우선순위 방향 1>2=3 1이 큼 - 1번,2번은 안씀
+    -->
+    
+    <div class="cls" style="width:20px; height:20px; background-color: blue;"></div> <!--우선순위 더 직접적 더 자세한 곳-->
+    <hr>
+
+    <div class="cls cls2 hi"> <!--이름이 3개임-->
+        <div>
+            <div>
+                <span>span</span>
+            </div>
+        </div>
+        <div>
+            dddd
+        </div>
+    </div>
+    <div >B</div>
+    <div class="cls">C</div>
+    <a href="">네이버</a>
+</body>
+</html>
