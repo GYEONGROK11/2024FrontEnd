@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        const arr = [10,20,30];
-        function fn(item){
-            return item*2;
+        const arr = [10, 20, 30];
+        function fn(item) {
+            return item * 2;
         }
-        function fn2(item){
+        function fn2(item) {
             return item - 5;
         }
 
-        const result =fn(10);
+        const result = fn(10);
         console.log(result);
-        
-        const arrResult =arr.map(fn2);
+
+        const arrResult = arr.map(fn2);
         console.log(arrResult);
 
         //----------------------
@@ -27,22 +29,35 @@
             '0': 10,
             '1': 50,
             '2': 30,
-            'length': 3,
-            'map': function(fn) {
+            '3': 40,
+            'length': 4,
+            'map': function (fn) {
                 const temp = [];
-                for(let i=0; i<this.length; i++) {
+                for (let i = 0; i < this.length; i++) {
                     temp[i] = fn(this[i]);
                 }
                 return temp;
             },
-            'forEach': function(fn) {
+            'forEach': function (fn) {
             },
-            'filter': function(fn) {
+            'filter': function (fn) {
+                const temp = [];
+                for (let i = 0; i < this.length; i++) {
+                    if(fn(this[i]))
+                    temp.push(this[i]) 
+                }
+                return temp;
             },
+            'reduce': function (fn) {
+            }
         };
         const myArrResult = myArr.map(fn2);
         console.log('myArrResult: ', myArrResult);
 
-</script>
+        const arr2 = myArr.filter(item => item <=30);
+        console.log('arr2: ', arr2);
+
+    </script>
 </body>
+
 </html>
